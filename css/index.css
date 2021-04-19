@@ -1,0 +1,219 @@
+body {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  background-color: #f3ebf6;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+nav {
+  background-color: #333;
+}
+
+#logo {
+  padding: 0 16px 0 8px;
+  color: rgb(197, 80, 80);
+}
+
+#toggle {
+  color: white;
+}
+
+form {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(228, 128, 128);
+  transition: 0.5s;
+  color: white;
+}
+
+#active {
+  background-color: rgb(197, 80, 80);
+}
+
+.nav-btn {
+  display: block;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 8px 18px;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+.nav-btn:hover {
+  background-color: rgb(228, 128, 128);
+  transition: 0.5s;
+  color: white;
+}
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #f3ebf6;
+}
+
+.tab button {
+  background-color: inherit;
+  width: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.6s;
+  font-size: 16px;
+  color: rgb(197, 80, 80);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tab button:hover {
+  background-color: rgb(228, 128, 128);
+  color: white;
+}
+
+.tab button.active {
+  background-color: rgb(197, 80, 80);
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  margin: 5% 6.3%;
+  background-color: #f3ebf6;
+  border-radius: 1.5em;
+  box-shadow: 1px 11px 35px 4px rgba(0, 0, 0, 0.14);
+}
+.top {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.top {
+  display: flex;
+  flex-flow: row;
+  background-color: #333;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.heading {
+  font-size: 18px;
+  color: rgb(197, 80, 80);
+  position: relative;
+  float: right;
+}
+.button {
+  margin: auto 0px auto auto;
+  transition: 0.5s;
+}
+
+.button:hover {
+  font-size: large;
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: rgb(197, 80, 80);
+  text-decoration: none;
+}
+.bottom {
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+.outer_bottom {
+  padding: 25px;
+  display: flex;
+  flex-flow: row;
+}
+.inner_bottom1,
+.inner_bottom2 {
+  display: flex;
+  flex-flow: row;
+  flex-basis: 50%;
+}
+
+.item {
+  flex-basis: 50%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 920px) {
+  .outer_bottom {
+    flex-flow: column;
+  }
+  .inner_bottom1,
+  .inner_bottom2 {
+    flex-basis: 100%;
+  }
+}
